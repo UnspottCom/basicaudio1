@@ -12,7 +12,18 @@
   background-image: url('/css/searchicon.png');
   background-position: 10px 10px;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 50%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myInput1 {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 50%;
   font-size: 16px;
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
@@ -44,8 +55,8 @@
 
 <h2>Audio Directory</h2>
 
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for track titles.." title="Type in a name">
-<input type="text" id="myInput" onkeyup="myFunction1()" placeholder="Search for speaker.." title="Type in a speaker">
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for track titles.." title="Type in a track name"
+<input type="text" id="myInput1" onkeyup="myFunction1()" placeholder="Search for speaker.." title="Type in a speaker">
 
 
 <table id="myTable">
@@ -106,7 +117,7 @@ function myFunction() {
 
 function myFunction1() {
   var input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("myInput");
+  input = document.getElementById("myInput1");
   filter = input.value.toUpperCase();
   table = document.getElementById("myTable");
   tr = table.getElementsByTagName("tr");
